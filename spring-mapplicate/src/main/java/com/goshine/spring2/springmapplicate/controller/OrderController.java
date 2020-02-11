@@ -24,7 +24,7 @@ public class OrderController {
 	 */
 	@GetMapping("order")
 	public Object order(String msg){
-		
+		System.out.println("master");
        return JsonData.buildSuccess(domain);
 	}
 	
