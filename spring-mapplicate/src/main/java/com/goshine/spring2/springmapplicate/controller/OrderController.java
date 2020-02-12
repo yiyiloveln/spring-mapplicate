@@ -25,17 +25,23 @@ public class OrderController {
 	@GetMapping("order")
 	public Object order(String msg){
 		System.out.println("master");
+		System.out.println("dev");
        return JsonData.buildSuccess(domain);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+	@GetMapping("dev")
+	public Object dev(String msg){
+		System.out.println("dev");
+		return JsonData.buildSuccess(domain);
+	}
+
+
+
+
+
+
+
+
+
 }
