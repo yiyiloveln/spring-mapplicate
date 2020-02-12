@@ -27,15 +27,20 @@ public class OrderController {
 		System.out.println("dev");
        return JsonData.buildSuccess(domain);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+	@GetMapping("dev")
+	public Object dev(String msg){
+		System.out.println("dev");
+		return JsonData.buildSuccess(domain);
+	}
+
+
+
+
+
+
+
+
+
 }
